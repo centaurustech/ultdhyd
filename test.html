@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="UnLtd Hyderabad, Incubator, SOcial Enterprise, Social Entrepreneur, Hyderabad, UnLtd, Start Up, Early Stage Start Up, Startup, Early Start Up, Early Startup, CSR, Donate, Social Impact, Social, Impact" />
+	<meta name="description" content="UnLtd Hyderabad is an incubator for Social Entrepreneurs and the largest network of social change makers in Andhra Pradesh and Telangana. We are the biggest platform for conversation, support, collaboration and celebration among social change makers.">
+	<meta name="author" content="UnLtd Hyderabad">
+
+
+	<title>UnLtd Hyderabad</title>
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+
+	<!-- Web Fonts  -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,700,700italic,900italic,900,500italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+	<script src="js/libs/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- FontAwesome icons CSS -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Theme Styles CSS-->
+	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+	<link href="js/rs-plugin/css/settings.css" rel="stylesheet" />
+	<link href="js/flexslider/flexslider.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="js/libs/html5.js"></script>
+	<![endif]-->
+
+	<style>.cta-box:before {border:none;}.tp-bullets {left: -880px !important;}</style>
+
+	
+	
+</head>
+
+<body>
+<form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
+</form> 
+</body>
+</html>

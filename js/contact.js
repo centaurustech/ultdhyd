@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $('#map_addresses').gMap({
-	address: "Estadio San Martin de Porres",
+	address: "UnLtd Hyderabad",
 	zoom: 15,
 	arrowStyle: 2,
 	controls: {
@@ -15,7 +15,7 @@ $('#map_addresses').gMap({
 
 		markers:[
 		{
-			address: "Estadio San Martin de Porres",
+			address: "UnLtd Hyderabad",
 			popup: false
 		}
 		]
