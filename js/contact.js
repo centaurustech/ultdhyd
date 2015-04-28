@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $('#map_addresses').gMap({
-	address: "UnLtd Hyderabad",
+	address: "UnLtd Hyderabad, H.No.8-2-326/A/2/A, Road No.3, Banjara Hills, Hyderabad 500034. ",
 	zoom: 15,
 	arrowStyle: 2,
 	controls: {
@@ -15,8 +15,8 @@ $('#map_addresses').gMap({
 
 		markers:[
 		{
-			address: "UnLtd Hyderabad",
-			popup: false
+			address: "UnLtd Hyderabad, H.No.8-2-326/A/2/A, Road No.3, Banjara Hills, Hyderabad 500034. ",
+			popup: true
 		}
 		]
 	});

@@ -163,7 +163,7 @@ a, a:hover {
 
 p {
 	font-size:13px;
-	color:#8a8a8a;
+	color:#535353;
 	line-height:22px;
 }
 
@@ -1821,8 +1821,8 @@ margin-top:30px;
 }
 
 .services2 p {
-	font-size: 12px;
-	color:#bbb;
+	font-size: 13px;
+	color:#535353;
 	margin-bottom:15px;
 	text-align:center;
 	line-height:19px;
@@ -1903,7 +1903,7 @@ margin-top:30px;
 .section-title, .side-widget h5 {
 	color:#444444;
 	font-size:20px;
-	margin:0px 0px 30px;
+	margin:0px 0px 10px;
 	background: url(../images/line.png) repeat-x left 9px;
 }
 
@@ -2293,7 +2293,7 @@ margin-top:30px;
 	padding:25px 20px;
 	border:1px solid #e1e1e1;
 	position:relative;
-	background:#f8f8f8 url(../images/quote.png) no-repeat bottom right;
+	background:#f8f8f8 /*url(../images/quote.png) no-repeat bottom right*/;
 	background-position: 93% 85%;
 }
 
@@ -2360,7 +2360,7 @@ margin-top:30px;
 	padding:25px 20px;
 	border:1px solid #e1e1e1;
 	position:relative;
-	background:#1c9cff url(../images/quote.png) no-repeat bottom right;
+/*	background:#1c9cff url(../images/quote.png) no-repeat bottom right;*/
 	background-position: 93% 85%;
 	cursor:pointer;
 }
@@ -2372,10 +2372,6 @@ margin-top:30px;
 	font-size:15px;
 }
 
-.quote-wrap:hover p {
-	color:#fff;
-	font-size:12px;
-}
 
 .quote-wrap:hover .quote-author h5, .quote-wrap:hover .quote-author h5 span {color:#fff !important;}
 .dblock {display:block;}
@@ -2387,17 +2383,17 @@ margin-top:30px;
 .about-home {}
 
 .about-home p {
-	color:#8a8a8a;
-	font-size:12px;
-	line-height:20px;
+	color:#535353;
+	font-size:13px;
+	line-height:22px;
 }
 
 .white-panel {
 	background:#fafafa;
 	border: 1px solid #dfdfdf;
-	padding: 10px 15px 0 15px;
+	padding: 10px ;
 	position:relative;
-	margin: 20px 0;
+	margin:0px 0;
 }
 
 .cta-box {
@@ -2418,8 +2414,7 @@ margin-top:30px;
 .cta-box p {
 	margin:0px;
 	font-size:14px;
-	color:#2e2e2e;
-	font-weight:600;
+	color:#585858;
 }
 
 #myTabContent {
@@ -3805,9 +3800,15 @@ color:#fff !important;
 	background-position: 9% 50%;
 }
 
-.contact-info {}
+.contact-info {
+	font-size:16px;
+	}
 
-.contact-info p a {color:#20affe;}
+.contact-info p {
+	font-size:16px;
+	}
+.contact-info p a {
+	color:#20affe;}
 
 /*------------------------------------------------------------- 
 	                   404PAGE  STYLES
@@ -5333,6 +5334,8 @@ img.mfp-img {
 
 .container {width:500px;max-width:500px;}
 
+
+
 }
 
 /*  #Mobile (Portrait)
@@ -5424,10 +5427,24 @@ img.mfp-img {
 }
 
 
+@media only screen and (max-width: 768px)  {
 
 
+.carousel-caption-inner p{
+	width:92% !important;
+	font-size:10px !important;
+	}
 
 
+.carousel-caption-inner h3{
+	width:auto !important;
+	font-size:10px !important;
+	}
+	
+.fullwidthbanner-container .fullwidthbanner{
+	height:140px !important;
+	}	
+}
 
 
 /* customised styles */
@@ -5479,7 +5496,7 @@ ul {
 	padding:0;}
 
 ul li{
-	color: #8a8a8a;
+	color: #535353;
     font-size: 13px;
 	line-height:22px;
 	list-style:none;
@@ -5500,7 +5517,7 @@ ul li{
 	}
 	
 .ourteam .quote-wrap{
-	background:url("../images/unltd_watermark.png") no-repeat scroll 93% 85% #f8f8f8;
+/*	background:url("../images/unltd_watermark.png") no-repeat scroll 93% 85% #f8f8f8;*/
 	}
 	
 .ourteam .quote-author-img img{
@@ -5511,7 +5528,7 @@ ul li{
 .ourteam .quote-wrap:hover p,
 .ourteam .quote-wrap:hover .quote-author h6,
 .ourteam .quote-wrap:hover .quote-author h6 span{
-	color:#8a8a8a !important;
+	color:#535353 !important;
 	}
 	
 .ourteam .quote-wrap:hover .quote-author h5{
@@ -5567,7 +5584,7 @@ ul li{
 	list-style:none;
 	font-size:13px;
 	line-height:26px;
-	color:#8a8a8a;
+	color:#535353;
 	}
 	
 .investees_content .investees_details li.name{
@@ -5847,9 +5864,10 @@ height:480px;}
 	}
 
 .bulets li{
-    background: url("../images/listicon.png") no-repeat scroll left 10px;
-    line-height: 30px;
+    background: url("../images/listicon.png") no-repeat scroll left 5px;
+    line-height: 20px;
     padding-left: 25px;
+	margin-bottom:10px;
 	}
 	
 .social-info-investees a .tooltest{
@@ -5877,3 +5895,8 @@ height:480px;}
 
 .partners a h5{
 	font-weight:600;}
+	
+.contact-form label{
+	font-weight:normal !important;
+	margin-bottom:0 !important;
+	}
