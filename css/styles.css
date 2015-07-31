@@ -354,8 +354,12 @@ p {
 
 #topnav ul {list-style: none;}
 #topnav > ul {float: left;}
-#topnav > ul > li {float: left;background:url(../images/nav-sep.png) no-repeat right center;padding:35px 20px;}
+#topnav > ul > li {float: left;background:url(../images/nav-sep.png) no-repeat right center;padding:35px 15px;}
 #topnav > ul > li > a { border-bottom:3px solid transparent;}
+#topnav > ul > li > a.button-blue{
+	color:#FFF;
+	padding:8px 20px;
+	}
 #topnav > ul > li.active > a,#topnav > ul > li > a:active { color:#313d53;border-color:#1b9cff;}
 #topnav > ul > li:hover > a {color:#313d53; border-color:#1b9cff;}
 #topnav > ul > li.active { }
@@ -5899,4 +5903,31 @@ height:480px;}
 .contact-form label{
 	font-weight:normal !important;
 	margin-bottom:0 !important;
+	}
+	
+	
+.governance .white-panel {
+	margin-right:20px;}
+	
+	
+.custom_model_dialog{
+	min-width:820px;
+	}
+	
+.custom_model_dialog .modal-body iframe{
+	overflow-x:auto !important;
+	overflow-y:hidden !important;
+}
+
+.modal{
+	z-index:100000 !important;
+	}
+	
+.btn-red{
+	background:#ed1d24;
+	color:#FFF !important;
+	padding:6px 20px;
+	border:0;
+	font-size:16px;
+	border-radius:4px;
 	}
